@@ -21,7 +21,7 @@
 </head>
 <body>
 <nav th:fragment="dash-sidebar-nav" class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="background: var(--info);">
-  <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" th:href="@{dashboard}">
+  <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" th:href="@{/dashboard}">
     <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-laugh-wink"></i></div>
     <div class="sidebar-brand-text mx-3"><span>E-Voter</span></div>
   </a>
@@ -34,37 +34,37 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" th:href="@{/dashboard/profile-page}">
+        <a class="nav-link" th:href="@{/dashboard/profile}">
           <i class="fas fa-user"></i>
           <span>Profile</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" th:href="@{/dashboard/polls-page}">
+        <a class="nav-link" th:href="@{/dashboard/polls}">
           <i class="fas fa-user"></i>
           <span>Polls</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" th:href="@{/dashboard/add-candidate-page}">
+        <a class="nav-link" th:href="@{/dashboard/add-candidate}">
           <i class="far fa-user-circle"></i>
           <span>Create Candidate</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" th:href="@{/dashboard/add-poll-type-page}">
+        <a class="nav-link" th:href="@{/dashboard/add-poll-type}">
           <i class="far fa-user-circle"></i>
           <span>Create Poll type</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" th:href="@{/dashboard/add-poll-page}">
+        <a class="nav-link" th:href="@{/dashboard/add-poll}">
           <i class="far fa-user-circle"></i>
           <span>Create Poll</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" th:href="@{/dashboard/add-admin-page}">
+        <a class="nav-link" th:href="@{/dashboard/add-admin}">
           <i class="fas fa-user-circle"></i>
           <span>Add Admin</span>
         </a>
@@ -89,7 +89,7 @@
             <img class="border rounded-circle img-profile" th:src="@{assets/img/avatars/avatar1.jpeg}">
           </a>
           <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in">
-            <a class="dropdown-item" th:href="@{/dashboard/profile-page}">
+            <a class="dropdown-item" th:href="@{/dashboard/profile}">
               <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
               &nbsp;Profile
             </a>
